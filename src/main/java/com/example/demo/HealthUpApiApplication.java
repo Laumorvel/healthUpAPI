@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
 import com.example.demo.model.Logro;
 import com.example.demo.model.Premio;
 import com.example.demo.model.User;
@@ -19,7 +21,7 @@ import com.example.demo.repository.UserRepo;
 
 @SpringBootApplication
 @EnableScheduling
-public class HealthUpApiApplication{
+public class HealthUpApiApplication extends SpringBootServletInitializer{
 	
 	@Autowired
 	private PasswordEncoder passwordEncoder;
