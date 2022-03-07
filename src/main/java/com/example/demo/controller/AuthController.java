@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.Map;
 
-import javax.mail.MessagingException;
+//import javax.mail.MessagingException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,7 +37,7 @@ import com.example.demo.service.MensajeService;
 import com.example.demo.service.UserService;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://healthupheroku.herokuapp.com")
 @RestController
 public class AuthController {
 
@@ -147,10 +147,10 @@ public class AuthController {
 		}
 	}
 	
-	@PostMapping("auth/newMessage")
-	public Mensaje newMessage(@RequestBody Mensaje msg) throws MessagingException {
-		return mensajeService.newMensaje(msg);
-	}
+//	@PostMapping("auth/newMessage")
+//	public Mensaje newMessage(@RequestBody Mensaje msg) throws MessagingException {
+//		return mensajeService.newMensaje(msg);
+//	}
 
 	// EXCEPCIONES------------------------------------------------------------
 	/**
