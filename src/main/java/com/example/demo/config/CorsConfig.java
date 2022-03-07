@@ -93,13 +93,8 @@ public class CorsConfig {
 						"Access-Control-Request-Method", "Access-Control-Request-Headers")
 				.exposedHeaders("Access-Control-Allow-Origin", "Access-Control-Allow-Credentials");
 				
-<<<<<<< HEAD
 				//Crea premio
 				registry.addMapping("/logro/{idLogro}/premio").allowedOrigins("https://healthupheroku.herokuapp.com")
-=======
-				//Añade premio a otro usuario
-				registry.addMapping("/premio/{idPremio}/user/{idUser}").allowedOrigins("https://healthupheroku.herokuapp.com")
->>>>>>> cd852f2c8f143ddfb4079d3a68beebb308721a5c
 				.allowedMethods("GET", "POST", "OPTIONS", "PUT")
 				.allowedHeaders("Content-Type","Authorization", "X-Requested-With", "accept", "Origin",
 						"Access-Control-Request-Method", "Access-Control-Request-Headers")
